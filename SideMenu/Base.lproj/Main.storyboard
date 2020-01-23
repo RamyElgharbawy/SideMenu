@@ -43,6 +43,10 @@
                                             <action selector="switchbu:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jmd-AF-Eyy"/>
                                         </connections>
                                     </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9E-UU-ich">
+                                        <rect key="frame" x="316" y="80" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.39991244058649411" blue="0.74541957487309651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
