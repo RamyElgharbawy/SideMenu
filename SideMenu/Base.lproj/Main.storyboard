@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eba-Lh-Tow">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKs-KR-NX8">
+                                        <rect key="frame" x="16" y="30" width="130" height="130"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="ihr-L2-Kwu"/>
+                                            <constraint firstAttribute="width" secondItem="CKs-KR-NX8" secondAttribute="height" multiplier="1:1" id="ntk-WE-C2J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Side Menu">
+                                            <color key="titleColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SideMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJX-NE-7VT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.39991244058649411" blue="0.74541957487309651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CKs-KR-NX8" firstAttribute="leading" secondItem="eba-Lh-Tow" secondAttribute="leading" constant="16" id="R6j-VD-ENw"/>
+                                    <constraint firstItem="CKs-KR-NX8" firstAttribute="top" secondItem="eba-Lh-Tow" secondAttribute="top" constant="30" id="av5-Be-iGa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-Kt-Y4X">
+                                <rect key="frame" x="-262.5" y="0.0" width="262.5" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ramy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKw-Xm-Qec">
+                                        <rect key="frame" x="16" y="28" width="230.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aKw-Xm-Qec" secondAttribute="trailing" constant="16" id="5Nf-xa-BXq"/>
+                                    <constraint firstItem="aKw-Xm-Qec" firstAttribute="leading" secondItem="AVt-Kt-Y4X" secondAttribute="leading" constant="16" id="7vB-y9-VxY"/>
+                                    <constraint firstItem="aKw-Xm-Qec" firstAttribute="top" secondItem="AVt-Kt-Y4X" secondAttribute="top" constant="28" id="XEs-1s-2u2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eba-Lh-Tow" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="42W-9e-iqG"/>
+                            <constraint firstItem="eba-Lh-Tow" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AF4-DJ-1aC"/>
+                            <constraint firstItem="eba-Lh-Tow" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hg2-LP-ceV"/>
+                            <constraint firstItem="AVt-Kt-Y4X" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Jcu-gC-NPR"/>
+                            <constraint firstAttribute="bottom" secondItem="AVt-Kt-Y4X" secondAttribute="bottom" id="MEI-rj-us8"/>
+                            <constraint firstItem="AVt-Kt-Y4X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nz0-gp-gVj"/>
+                            <constraint firstItem="eba-Lh-Tow" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="OyI-DL-SgF"/>
+                            <constraint firstItem="eba-Lh-Tow" firstAttribute="leading" secondItem="AVt-Kt-Y4X" secondAttribute="trailing" id="ZoD-hn-Jvo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="SideMenuLayout" destination="42W-9e-iqG" id="ffX-bd-3xv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
